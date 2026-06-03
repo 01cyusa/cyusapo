@@ -106,6 +106,21 @@ html.dark nav { background: rgba(17,17,16,0.92); }
   color: var(--black);
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.nav-logo-img {
+  width: 2.8rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.3rem;
+}
+.nav-logo span {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
 .nav-links a {
@@ -119,6 +134,25 @@ html.dark nav { background: rgba(17,17,16,0.92); }
   transition: color 0.2s;
 }
 .nav-links a:hover, .nav-links a.active-link { color: var(--black); }
+.hero-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+.hero-brand-logo {
+  width: 4rem;
+  height: auto;
+  border-radius: 0.4rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.hero-brand span {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
 .btn-hire-nav {
   background: var(--black) !important;
   color: var(--white) !important;
