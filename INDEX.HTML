@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyusa — Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">CYUSA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="hire.html" class="btn-hire-nav">✦ Hire Me</a></li>
+      <li>
+        <div class="theme-toggle-wrap" onclick="toggleTheme()" title="Toggle dark/light mode">
+          <span class="theme-icon">☀️</span>
+          <div class="theme-toggle"></div>
+          <span class="theme-icon">🌙</span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-content fade-up">
+        <span class="badge">Age 16 · 3 Years Experience · Available for Work</span>
+        <h1>Building the<br><span>Future</span><br>of the Web.</h1>
+        <p class="hero-desc">I'm Cyusa — a 16-year-old software developer turning complex problems into sleek, high-performance digital experiences. Three years in, and I'm just getting started.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="projects.html">↓ View My Work</a>
+          <a class="btn btn-hire" href="hire.html"><span>✦ Hire Me</span></a>
+          <a class="btn btn-ghost" href="about.html">Learn More</a>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Coding</span></div>
+          <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Projects Built</span></div>
+          <div class="stat"><span class="stat-num">16</span><span class="stat-label">Years Old</span></div>
+          <div class="stat"><span class="stat-num">8</span><span class="stat-label">Curiosity</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" style="transition-delay:0.2s">
+        <img class="hero-photo" src="./Snapchat-759803285.jpg" alt="Cyusa portrait">
+          <span class="chip">Vue.js</span><span class="chip">React</span><span class="chip">Node.js</span>
+          <span class="chip">TypeScript</span><span class="chip">CSS / Tailwind</span><span class="chip">Git</span>
+          <span class="chip">Figma</span><span class="chip">REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-projects-preview">
+      <div class="fade-up">
+        <p class="section-label">// selected work</p>
+        <h2 class="section-title">What I've Built</h2>
+        <div class="projects-preview-grid">
+          <a class="project-card" href="projects.html">
+            <div class="project-num">01</div>
+            <h3>Portfolio Platform</h3>
+            <p>Fully responsive animated portfolio with scroll-driven animations built in Vue.js.</p>
+            <div class="project-tags"><span class="project-tag">Vue.js</span><span class="project-tag">CSS3</span><span class="project-tag">Animation</span></div>
+          </a>
+          <a class="project-card" href="projects.html">
+            <div class="project-num">02</div>
+            <h3>E-Commerce Dashboard</h3>
+            <p>Admin panel with real-time data, charts, and 2000+ product entries with smooth pagination.</p>
+            <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Node.js</span><span class="project-tag">REST API</span></div>
+          </a>
+          <a class="project-card" href="projects.html">
+            <div class="project-num">03</div>
+            <h3>Task Management App</h3>
+            <p>Drag-and-drop kanban board with authentication and polished dark-mode interface.</p>
+            <div class="project-tags"><span class="project-tag">Vue.js</span><span class="project-tag">Firebase</span><span class="project-tag">Figma</span></div>
+          </a>
+        </div>
+        <div class="view-all-wrap">
+          <a class="btn btn-outline" href="projects.html">View All Projects →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-cta" class="fade-up">
+      <p class="section-label">// let's collaborate</p>
+      <h2 class="section-title">Ready to Build<br>Something Great?</h2>
+      <p class="contact-desc">Whether you need a landing page, a full web app, or a developer who thinks deeply — I'm available and ready to deliver exceptional work.</p>
+      <div class="cta-big">
+        <a class="btn btn-hire" href="hire.html"><span>✦ Hire Me Now</span></a>
+        <a class="btn btn-primary" href="hire.html">Send a Message</a>
+        <a class="btn btn-outline" href="projects.html">View My Work</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2025 Cyusa Ivan — All rights reserved.</span>
+    <div class="footer-links">
+      <a href="hire.html">Hire Me</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>

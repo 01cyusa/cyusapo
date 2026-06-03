@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire — Cyusa Ivan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">CYUSA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Work</a></li>
+      <li><a href="hire.html" class="btn-hire-nav">✦ Hire Me</a></li>
+      <li>
+        <div class="theme-toggle-wrap" onclick="toggleTheme()" title="Toggle dark/light mode">
+          <span class="theme-icon"></span>
+          <div class="theme-toggle"></div>
+          <span class="theme-icon"></span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="page hire-page">
+    <div class="hire-hero">
+      <p class="section-label">// get in touch</p>
+      <h2 class="section-title">Let's Work<br>Together.</h2>
+      <p>I'm open to freelance projects, part-time contracts, and collabs. Tell me what you need — I'll deliver more than you expect.</p>
+    </div>
+
+    <div class="hire-body">
+      <div class="hire-info">
+        <div class="availability-badge">Currently available for hire</div>
+        <h3>Why Work With Me?</h3>
+        <p>At 16 with 3 years of real-world coding experience, I bring energy, precision, and zero burnout to every project. I communicate clearly, deliver on time, and go the extra mile as a matter of pride — not obligation.</p>
+        <p>Whether it's a landing page, a full web app, or a complex dashboard — I've built it, or I'll figure it out faster than you think.</p>
+        <div class="contact-methods">
+          <a class="contact-method" href="mailto:cyusaivan0@gmail.com">
+            <span class="cm-icon">✉️</span>
+            <div><span class="cm-label">Email me</span><span class="cm-value">cyusaivan0@gmail.com</span></div>
+          </a>
+          <a class="contact-method" href="https://github.com" target="_blank">
+            <span class="cm-icon">🐙</span>
+            <div><span class="cm-label">Check my code</span><span class="cm-value">github.com/cyusaivan</span></div>
+          </a>
+          <a class="contact-method" href="https://linkedin.com" target="_blank">
+            <span class="cm-icon">💼</span>
+            <div><span class="cm-label">Connect professionally</span><span class="cm-value">linkedin.com/in/cyusaivan</span></div>
+          </a>
+          <a class="contact-method" href="https://wa.me/250000000000" target="_blank">
+            <span class="cm-icon">📱</span>
+            <div><span class="cm-label">WhatsApp me</span><span class="cm-value">+250 000 000 000</span></div>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label" style="margin-bottom:1.5rem">// send a message</p>
+        <div class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input class="form-input" id="f-name" type="text" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Email</label>
+              <input class="form-input" id="f-email" type="email" placeholder="john@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Project Type</label>
+            <input class="form-input" id="f-type" type="text" placeholder="e.g. Landing page, Web app, Dashboard...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Budget Range</label>
+            <input class="form-input" id="f-budget" type="text" placeholder="e.g. $200–$500">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tell me about your project</label>
+            <textarea class="form-textarea" id="f-msg" placeholder="Describe what you need — the more detail, the better..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem" onclick="submitForm()">Send Message →</button>
+          <div class="form-success" id="form-success">✓ Message sent! I'll get back to you within 24 hours.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2025 Cyusa Ivan — All rights reserved.</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Work</a>
+    </div>
+  </footer>
+</body>
+</html>
