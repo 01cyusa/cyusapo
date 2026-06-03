@@ -325,14 +325,27 @@ html.dark .code-card { background: #0a0a09; border-color: rgba(255,255,255,0.04)
 .chip:hover { background: var(--black); color: var(--white); border-color: var(--black); transform: translateY(-1px); }
 
 #about {
-  background: var(--off-white);
+  background: linear-gradient(rgba(17,17,16,0.75), rgba(17,17,16,0.75)), url('./CYUSA.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
   align-items: center;
   padding: 6rem 4rem;
+  color: var(--white);
 }
-.about-text p { color: var(--grey-400); margin-bottom: 1.2rem; font-weight: 300; font-size: 1.05rem; line-height: 1.8; }
+#about .section-label,
+#about .section-title,
+#about .about-text p,
+#about .about-text p strong {
+  color: inherit;
+}
+#about .cap-item {
+  color: var(--black);
+}
+.about-text p { color: var(--grey-100); margin-bottom: 1.2rem; font-weight: 300; font-size: 1.05rem; line-height: 1.8; }
 .about-text p strong { color: var(--black); font-weight: 600; }
 .capabilities { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
 .cap-item { background: var(--white); border: 1px solid var(--grey-100); padding: 1.2rem; border-radius: 4px; transition: all 0.25s; }
