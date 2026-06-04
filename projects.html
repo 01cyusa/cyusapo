@@ -29,14 +29,7 @@
           <div class="theme-toggle"></div>
           <span class="theme-icon"></span>
         </div>
-         <div class="language-switcher">
-    <select id="google_translate_select">
-        <option value="en">English</option>
-        <option value="fr">French</option>
-        <option value="rw">Kinyarwanda</option>
-    </select>
-</div>
-<div id="google_translate_element" style="display:none;"></div>
+        
       </li>
     </ul>
   </nav>
@@ -56,7 +49,7 @@
         <button class="filter-btn" onclick="filterProjects('Node.js', this)">Node.js</button>
         <button class="filter-btn" onclick="filterProjects('Design', this)">Design</button>
       </div>
-      <div class="project-card" data-category="Vue.js">
+   <div class="project-card" data-category="Vue.js">
     <div class="project-content">
         <h3>TEMBERA U RWANDA</h3>
         <p>
@@ -69,14 +62,21 @@
             <span>JavaScript</span>
         </div>
 
-        <a href="https://sos-l3-j6ew.vercel.app/"
-           target="_blank"
-           class="project-link">
-            Visit Website →
-        </a>
+        <div class="project-buttons">
+            <a href="https://sos-l3-j6ew.vercel.app/"
+               target="_blank"
+               class="project-link">
+                Visit Website →
+            </a>
+
+            <a href="https://github.com/01cyusa/SOS-L3"
+               target="_blank"
+               class="github-link">
+                GitHub
+            </a>
+        </div>
     </div>
 </div>
-      <div class="projects-full-grid" id="projects-grid"></div>
 </style>
 <style>
 .project-card{
