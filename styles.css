@@ -602,3 +602,41 @@ footer a:hover { color: var(--white); }
   .stats-row { gap: 1.5rem; }
   .capabilities, .form-row { grid-template-columns: 1fr; }
 }
+.project-card{
+    background: rgba(225, 222, 222, 0.08);
+    border: 1px solid (252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+}
+
+.project-content h3{
+    margin-bottom: 10px;
+}
+
+.project-tech{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.project-tech span{
+    background: #444;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.project-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover{
+    text-decoration: underline;
+}

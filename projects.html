@@ -29,13 +29,21 @@
           <div class="theme-toggle"></div>
           <span class="theme-icon"></span>
         </div>
+         <div class="language-switcher">
+    <select id="google_translate_select">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="rw">Kinyarwanda</option>
+    </select>
+</div>
+<div id="google_translate_element" style="display:none;"></div>
       </li>
     </ul>
   </nav>
 
   <main class="page">
     <div class="projects-page-hero">
-      <p class="section-label">// all work</p>
+      <p class="section-label">All work</p>
       <h2 class="section-title">Every Project.<br>Every Line.</h2>
       <p>A full archive of what I've built over 3 years — from quick tools to production-ready apps.</p>
     </div>
@@ -48,14 +56,98 @@
         <button class="filter-btn" onclick="filterProjects('Node.js', this)">Node.js</button>
         <button class="filter-btn" onclick="filterProjects('Design', this)">Design</button>
       </div>
+      <div class="project-card" data-category="Vue.js">
+    <div class="project-content">
+        <h3>TEMBERA U RWANDA</h3>
+        <p>
+            A tourism website that helps users discover Rwanda's beautiful
+            destinations, attractions, and travel experiences.
+        </p>
+
+        <div class="project-tech">
+            <span>Vue.js</span>
+            <span>JavaScript</span>
+        </div>
+
+        <a href="https://sos-l3-j6ew.vercel.app/"
+           target="_blank"
+           class="project-link">
+            Visit Website →
+        </a>
+    </div>
+</div>
       <div class="projects-full-grid" id="projects-grid"></div>
+</style>
+<style>
+.project-card{
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 350px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.project-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Dark Mode */
+body.dark-mode .project-card{
+    color: white;
+}
+
+body.dark-mode .project-card h3,
+body.dark-mode .project-card p{
+    color: white;
+}
+
+/* Light Mode */
+body:not(.dark-mode) .project-card{
+    color: #111;
+    background: rgba(255,255,255,0.9);
+}
+
+body:not(.dark-mode) .project-card h3,
+body:not(.dark-mode) .project-card p{
+    color: #111;
+}
+
+.project-tech{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.project-tech span{
+    background: #555;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.project-link{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Dark Mode Link */
+body.dark-mode .project-link{
+    background: #333;
+    color: white;
+}
+
+/* Light Mode Link */
+body:not(.dark-mode) .project-link{
+    background: #ddd;
+    color: #111;
+}
+</style>
     </div>
   </main>
-
-  <footer>
-    <span>© 2025 Cyusa Ivan — All rights reserved.</span>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="hire.html">Hire Me</a>
-    </div>
-  </footer>
