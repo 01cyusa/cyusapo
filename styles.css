@@ -602,30 +602,3 @@ footer a:hover { color: var(--white); }
   .stats-row { gap: 1.5rem; }
   .capabilities, .form-row { grid-template-columns: 1fr; }
 }
-.skills-page {
-    background: linear-gradient(rgba(0,0,0,0.7),
-                rgba(0,0,0,0.7)),
-                url("iceman.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-.work-page {
-    background: linear-gradient(rgba(0,0,0,0.7),
-                rgba(0,0,0,0.7)),
-                url("Maid of honor.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-.hire-page {
-    background: linear-gradient(rgba(0,0,0,0.7),
-                rgba(0,0,0,0.7)),
-                url("HABIBTI.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
